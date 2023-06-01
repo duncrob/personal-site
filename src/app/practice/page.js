@@ -1,4 +1,4 @@
-import Experience from "../../../components/Experience"
+import Experience from "../components/Experience"
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
             </p>
           </section>
           <section id='experience'>
-            <ol>
+            <ol className="group/list">
               <Experience />
               <Experience />
             </ol>
