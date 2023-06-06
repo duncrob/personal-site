@@ -68,8 +68,10 @@ export default function Home() {
                 My recent experience has been working on websites for various organizations at UW. In my off time, I love enjoying coffee and going snowboarding.
               </p>
             </section>
-            <section id='experience'>
+            <section id='experience' className='mb-16 scroll-mt-16 lg:mb-36 lg:scroll-mt-24' aria-label='Experiences'>
               <ol className="group/list">
+                <Experience />
+                <Experience />
                 <Experience />
                 <Experience />
               </ol>
