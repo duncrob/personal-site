@@ -3,6 +3,8 @@ import SplitType from "split-type"
 import Experience from "../components/Experience"
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import experiences from "../../../public/experiences.json"
+import { Economica } from "next/font/google";
 
 export default function Home() {
   useEffect(() => {
@@ -22,6 +24,12 @@ export default function Home() {
       duration: 0.5
     });
   }, [])
+
+  function renderExperiences() {
+    return experiences.map((experience) => {
+      return <Experience experience={experience} />
+    })
+  }
 
   return (
     <div className='relative'>
@@ -70,10 +78,7 @@ export default function Home() {
             </section>
             <section id='experience' className='mb-16 scroll-mt-16 lg:mb-36 lg:scroll-mt-24' aria-label='Experiences'>
               <ol className="group/list">
-                <Experience />
-                <Experience />
-                <Experience />
-                <Experience />
+                {renderExperiences()}
               </ol>
             </section>
           </main>
