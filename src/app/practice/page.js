@@ -70,7 +70,7 @@ export default function Home() {
           <main id='content' className='lg:py-24 lg:w-1/2'>
             <section id='about' className='lg:mb-36 lg:scroll-mt-24' aria-label='About me'>
               <p className='mb-4'>
-                Hello! I&apos;m Duncan, a senior at the University of Washington. I am currently in the Informatics program as an aspiring front-end developer. I am passionate about design that empowers the user.
+                Hello! I&apos;m Duncan, a recent graduate from the University of Washington. I graduated with a Bachelor of Science in Informatics, leveraging my skills to become a front-end developer. I am passionate about design that empowers the user.
               </p>
               <p className='mb-4'>
                 My recent experience has been working on websites for various organizations at UW. In my off time, I love enjoying coffee and going snowboarding.
@@ -80,6 +80,11 @@ export default function Home() {
               <ol className="group/list">
                 {renderExperiences()}
               </ol>
+              <div className="mt-12">
+                <a className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold group" aria-label="View Full Résumé">
+
+                </a>
+              </div>
             </section>
           </main>
         </div>
