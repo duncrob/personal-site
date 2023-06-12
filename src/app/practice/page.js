@@ -6,7 +6,8 @@ import { gsap } from "gsap";
 import experiences from "../../../public/experiences.json"
 import projects from "../../../public/projects.json"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { faLinkedin, faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import Project from "../components/Project";
 
 export default function Home() {
@@ -47,9 +48,9 @@ export default function Home() {
           <header className='lg:py-24 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between max-h-screen'>
             <div>
               <h1 className='name-text text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl invisible' style={{'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'}}>
-                <a href="/" >Duncan Krey</a>
+                <a href="/practice" >Duncan Krey</a>
               </h1>
-              <h2 className='mt-3 text-lg font-medium'>Frontend Developer</h2>
+              <h2 className='mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl'>Frontend Developer</h2>
               <p className='max-w-xs mt-4'>I am passionate about web experiences that empower the user.</p>
               <nav className='nav lg:block' aria-label='In-page jump links'>
                 <ul className='mt-16 w-max'>
@@ -75,7 +76,24 @@ export default function Home() {
               </nav>
             </div>
             <ul className='ml-1 mt-8 flex items-center' aria-label='Social Media'>
-            <li>Link</li>
+            <li className="mr-5 text-xs">
+                <a href="https://github.com/duncrob" target="_blank" rel="noreferrer" className="block hover:text-slate-200">
+                  <span className="sr-only">Github</span>
+                  <FontAwesomeIcon className="h-6 w-6" icon={faGithub} />
+                </a>
+              </li>
+              <li className="mr-5 text-xs">
+                <a href="https://www.instagram.com/duncan.krey/" target="_blank" rel="noreferrer" className="block hover:text-slate-200">
+                  <span className="sr-only">Instagram</span>
+                  <FontAwesomeIcon className="h-6 w-6" icon={faInstagram} />
+                </a>
+              </li>
+              <li className="mr-5 text-xs">
+                <a href="https://www.linkedin.com/in/duncan-krey/" target="_blank" rel="noreferrer" className="block hover:text-slate-200">
+                  <span className="sr-only">LinkedIn</span>
+                  <FontAwesomeIcon className="h-6 w-6" icon={faLinkedin} />
+                </a>
+              </li>
             </ul>
           </header>
           <main id='content' className='lg:py-24 lg:w-1/2'>
