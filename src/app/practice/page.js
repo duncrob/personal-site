@@ -43,7 +43,7 @@ export default function Home() {
 
   return (
     <div className='relative'>
-      <div className='mx-auto min-h-screen max-w-screen-xl px-6 md:px-12 lg:px-24'>
+      <div className='mx-auto min-h-screen max-w-screen-xl px-6 md:px-12 lg:px-24 py-12 md:py-20 lg:py-0'>
         <div className='lg:flex lg:justify-between lg:gap-4'>
           <header className='lg:py-24 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between max-h-screen'>
             <div>
@@ -52,7 +52,7 @@ export default function Home() {
               </h1>
               <h2 className='mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl'>Frontend Developer</h2>
               <p className='max-w-xs mt-4'>I am passionate about web experiences that empower the user.</p>
-              <nav className='nav lg:block' aria-label='In-page jump links'>
+              <nav className='nav hidden lg:block' aria-label='In-page jump links'>
                 <ul className='mt-16 w-max'>
                   <li>
                     <a className='group flex items-center py-3' href='#about'>
@@ -96,14 +96,19 @@ export default function Home() {
                 </li>
             </ul>
           </header>
-          <main id='content' className='lg:py-24 lg:w-1/2'>
+          <main id='content' className='pt-24 lg:py-24 lg:w-1/2'>
             <section id='about' className='lg:mb-36 lg:scroll-mt-24' aria-label='About me'>
-              <p className='mb-4'>
-                Hello! I&apos;m Duncan, a recent graduate from the University of Washington. I graduated with a Bachelor of Science in Informatics, leveraging my skills to become a front-end developer. I am passionate about design that empowers the user.
-              </p>
-              <p className='mb-4'>
-                My recent experience has been working on websites for various organizations at UW. In my off time, I love enjoying coffee and going snowboarding.
-              </p>
+              <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">About</h2>
+              </div>
+              <div>
+                <p className='mb-4'>
+                  Hello! I&apos;m Duncan, a recent graduate from the University of Washington. I graduated with a Bachelor of Science in Informatics, leveraging my skills to become a front-end developer. I am passionate about design that empowers the user.
+                </p>
+                <p className='mb-4'>
+                  My recent experience has been working on websites for various organizations at UW. In my off time, I love enjoying coffee and going snowboarding.
+                </p>
+              </div>
             </section>
             <section id='experience' className='mb-16 scroll-mt-16 lg:mb-36 lg:scroll-mt-24' aria-label='Experiences'>
               <ol className="group/list">
