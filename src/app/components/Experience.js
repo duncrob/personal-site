@@ -36,7 +36,7 @@ export default function Experience({ experience }) {
                                 <span>
                                     {experience.position + " · "}
                                     <span className="inline-block">
-                                        {experience.company}<FiArrowUpRight />
+                                        {experience.company}<FiArrowUpRight className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" />
                                     </span>
                                 </span>
                             </a>

@@ -4,8 +4,10 @@ import Experience from "../components/Experience"
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import experiences from "../../../public/experiences.json"
+import projects from "../../../public/projects.json"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Project from "../components/Project";
 
 export default function Home() {
   useEffect(() => {
@@ -32,13 +34,21 @@ export default function Home() {
     })
   }
 
+  function renderProjects() {
+    return projects.map((project) => {
+      return <Project project={project} />
+    })
+  }
+
   return (
     <div className='relative'>
       <div className='mx-auto min-h-screen max-w-screen-xl px-6 md:px-12 lg:px-24'>
         <div className='lg:flex lg:justify-between lg:gap-4'>
           <header className='lg:py-24 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between max-h-screen'>
             <div>
-              <h1 className='name-text text-4xl font-bold invisible' style={{'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'}}>Duncan Krey</h1>
+              <h1 className='name-text text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl invisible' style={{'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'}}>
+                <a href="/" >Duncan Krey</a>
+              </h1>
               <h2 className='mt-3 text-lg font-medium'>Frontend Developer</h2>
               <p className='max-w-xs mt-4'>I am passionate about web experiences that empower the user.</p>
               <nav className='nav lg:block' aria-label='In-page jump links'>
@@ -96,6 +106,11 @@ export default function Home() {
             <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Selected projects">
               <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
                 <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Projects</h2>
+              </div>
+              <div>
+                <ul className="group/list" >
+                  {renderProjects()}
+                </ul>
               </div>
             </section>
           </main>
