@@ -14,7 +14,7 @@ export default function Experience({ experience }) {
     function renderTechnologies() {
         return experience.technologies.map((tech) => {
             return (
-                <li className="mr-1.5 mt-2">
+                <li className="mr-1.5 mt-2" key={tech}>
                     <div className="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300">
                         {tech}
                     </div>
@@ -24,7 +24,7 @@ export default function Experience({ experience }) {
     }
 
     return (
-        <li className="mb-12">
+        <li className="mb-12" key={experience.company}>
             <div className="group relative grid grid-cols-8 gap-4 pb-1 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                 <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                 <header className="col-span-2 text-xs mt-1 font-semibold uppercase text-slate-500 z-10">{experience.start} - {experience.end}</header>
