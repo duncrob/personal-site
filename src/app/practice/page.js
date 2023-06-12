@@ -31,13 +31,13 @@ export default function Home() {
 
   function renderExperiences() {
     return experiences.map((experience) => {
-      return <Experience experience={experience} />
+      return <Experience key={experience.company} experience={experience} />
     })
   }
 
   function renderProjects() {
     return projects.map((project) => {
-      return <Project project={project} />
+      return <Project key={project.title} project={project} />
     })
   }
 
