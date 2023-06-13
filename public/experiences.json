@@ -1,0 +1,42 @@
+[
+    {
+        "position": "Frontend Developer",
+        "company": "Nexus UW",
+        "start": "2022",
+        "end": "2023",
+        "desc": "Programming dynamic React components for a student hub, facilitating local project discovery. Implementing user feedback to enhance style and functionality, optimizing user experience. Collaborating with the design team to bring the website to life through a fusion of design and functionality. Ensuring smooth frontend-to-database connection by working closely with the backend team.",
+        "technologies": [
+            "React",
+            "React Native",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "SQL",
+            "Node.js"
+        ]
+    },
+    {
+        "position": "Teaching Assistant",
+        "company": "UW Information School",
+        "start": "2022",
+        "end": "2023",
+        "desc": "Delivering weekly instruction to a cohort of 25-30 students on information systems and design. Collaborating with a dynamic teaching team to craft innovative course material and class organization. Providing comprehensive support by addressing student inquiries regarding course content and logistics.",
+        "technologies": [
+            "Figma"
+        ]
+    },
+    {
+        "position": "Research Assistant",
+        "company": "University of Washington",
+        "start": "2021",
+        "end": "2022",
+        "desc": "Developed a web app that teaches coding, leveraging JavaScript and React framework. Collaborated with a team of 2 developers to create a Wizard of Oz app for testing. Engaged in insightful discussions on AI literacy with families and children, gaining deeper stakeholder understanding. Executed impactful community-based research with families, focusing on AI literacy for valuable insights.",
+        "technologies": [
+            "React",
+            "React Native",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ]
+    }
+]

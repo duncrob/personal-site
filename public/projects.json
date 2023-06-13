@@ -1,0 +1,14 @@
+[
+    {
+        "title": "HEART: A Creative Outlet for Students",
+        "desc": "Developed a full-stack mobile web experience for UW students to share their artwork and creative processes. Worked as the sole developer to bring our groups' designs to life.",
+        "url": "https://ischool.uw.edu/capstone/projects/2023/heart",
+        "imgsrc": "heart.jpg"
+    },
+    {
+        "title": "NEXUS UW",
+        "desc": "Developed on a frontend team to launch a website for UW students to find opportunities around campus. Worked closely with the backend and design team to ensure seamless integration.",
+        "url": "https://nexusatuw.com",
+        "imgsrc": "nexus.jpg"
+    }
+]
