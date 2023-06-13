@@ -14,6 +14,7 @@ export default function Home() {
     }
 
     document.querySelector('.name-text').classList.remove('invisible');
+    document.querySelector('.name-text').classList.remove('invisible');
 
     gsap.to('.char', {
       y: -3,
