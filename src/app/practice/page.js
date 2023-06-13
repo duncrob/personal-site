@@ -43,12 +43,13 @@ export default function Home() {
   }
 
   return (
-    <div className='relative'>
+    <div className='relative group/spotlight'>
+      <div className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute" style={{background: "radial-gradient(600px at 1023px 145px, rgba(29, 78, 216, 0.15), transparent 80%)"}}></div>
       <div className='mx-auto min-h-screen max-w-screen-xl px-6 md:px-12 lg:px-24 py-12 md:py-20 lg:py-0'>
         <div className='lg:flex lg:justify-between lg:gap-4'>
           <header className='lg:py-24 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between max-h-screen'>
             <div>
-              <h1 className='name-text text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl invisible' style={{'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'}}>
+              <h1 className='name-text text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl invisible' style={{clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'}}>
                 <a href="/practice" >Duncan Krey</a>
               </h1>
               <h2 className='mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl'>Frontend Developer</h2>
@@ -98,7 +99,7 @@ export default function Home() {
             </ul>
           </header>
           <main id='content' className='pt-24 lg:py-24 lg:w-1/2'>
-            <section id='about' className='lg:mb-36 lg:scroll-mt-24' aria-label='About me'>
+            <section id='about' className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24' aria-label='About me'>
               <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
                 <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">About</h2>
               </div>
@@ -112,19 +113,24 @@ export default function Home() {
               </div>
             </section>
             <section id='experience' className='mb-16 scroll-mt-16 lg:mb-36 lg:scroll-mt-24' aria-label='Experiences'>
-              <ol className="group/list">
-                {renderExperiences()}
-              </ol>
-              <div className="mt-12">
-                <a href="/Resume.pdf" type="application/pdf" className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold group" aria-label="View Full Résumé">
-                  <span>
-                    <span className="border-b border-transparent pb-px transition group-hover:border-blue-300 motion-reduce:transition-none">View Full </span>
-                    <span className="whitespace-nowrap" >
-                      <span className="border-b border-transparent pb-px transition group-hover:border-blue-300 motion-reduce:transition-none" >Résumé</span>
-                      <FontAwesomeIcon aria-hidden className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" icon={faArrowRight} />
+              <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Experience</h2>
+              </div>
+              <div>
+                <ol className="group/list">
+                  {renderExperiences()}
+                </ol>
+                <div className="mt-12">
+                  <a href="/Resume.pdf" type="application/pdf" className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold group" aria-label="View Full Résumé">
+                    <span>
+                      <span className="border-b border-transparent pb-px transition group-hover:border-blue-300 motion-reduce:transition-none">View Full </span>
+                      <span className="whitespace-nowrap" >
+                        <span className="border-b border-transparent pb-px transition group-hover:border-blue-300 motion-reduce:transition-none" >Résumé</span>
+                        <FontAwesomeIcon aria-hidden className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" icon={faArrowRight} />
+                      </span>
                     </span>
-                  </span>
-                </a>
+                  </a>
+                </div>
               </div>
             </section>
             <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Selected projects">

@@ -1,4 +1,5 @@
 import {FiArrowUpRight} from "react-icons/fi";
+import Image from "next/image";
 
 export default function Project({ project }) {
     return (
@@ -19,7 +20,7 @@ export default function Project({ project }) {
                     </h3>
                     <p className="mt-2 text-sm leading-normal" >{project.desc}</p>
                 </div>
-                <img src={"/img/" + project.imgsrc} className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" />
+                <Image src={"/img/" + project.imgsrc} width={200} height={48} alt={"Cover image for " + project.name} className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" />
             </div>
         </li>
     )
