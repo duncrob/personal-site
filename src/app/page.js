@@ -110,7 +110,7 @@ export default function Home() {
               </div>
               <div>
                 <p className='mb-4'>
-                  Hello! I&apos;m Duncan, a recent graduate from the <a className="font-medium text-slate-200 hover:text-blue-300 focus-visible:text-blue-300" href="https://www.washington.edu/" target="_blank" rel="noreferrer">University of Washington</a>. I graduated with a Bachelor of Science in <a className="font-medium text-slate-200 hover:text-blue-300 focus-visible:text-blue-300" href="https://ischool.uw.edu/programs/informatics/what-is-informatics" target="_blank" rel="noreferrer">Informatics</a>, leveraging my skills to become a front-end developer.
+                  Hello! I&apos;m Duncan, a recent graduate from the <a className="font-medium text-slate-200 hover:text-blue-300 focus-visible:text-blue-300" href="https://www.washington.edu/" target="_blank" rel="noreferrer">University of Washington</a>. I graduated with a Bachelor of Science in <a className="font-medium text-slate-200 hover:text-blue-300 focus-visible:text-blue-300" href="https://ischool.uw.edu/programs/informatics/what-is-informatics" target="_blank" rel="noreferrer">Informatics</a>, leveraging my skills to become a frontend developer.
                 </p>
                 <p className='mb-4'>
                   My recent experience has been working on websites for various organizations at UW. In my off time, I love enjoying coffee and going snowboarding.
