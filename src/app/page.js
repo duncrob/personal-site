@@ -55,7 +55,7 @@ export default function Home() {
           <header className='lg:py-24 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between max-h-screen'>
             <div>
               <h1 className='name-text text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl invisible' style={{clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'}}>
-                <a href="/practice" >Duncan Krey</a>
+                <a href="/" >Duncan Krey</a>
               </h1>
               <h2 className='mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl'>Frontend Developer</h2>
               <p className='max-w-xs mt-4'>I am passionate about web experiences that empower the user.</p>
