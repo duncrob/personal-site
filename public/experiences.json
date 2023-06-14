@@ -13,7 +13,8 @@
             "CSS",
             "SQL",
             "Node.js"
-        ]
+        ],
+        "url": "https://nexusatuw.com"
     },
     {
         "position": "Teaching Assistant",
@@ -23,20 +24,22 @@
         "desc": "Delivering weekly instruction to a cohort of 25-30 students on information systems and design. Collaborating with a dynamic teaching team to craft innovative course material and class organization. Providing comprehensive support by addressing student inquiries regarding course content and logistics.",
         "technologies": [
             "Figma"
-        ]
+        ],
+        "url": "https://ischool.uw.edu/"
     },
     {
         "position": "Research Assistant",
         "company": "University of Washington",
         "start": "2021",
         "end": "2022",
-        "desc": "Developed a web app that teaches coding, leveraging JavaScript and React framework. Collaborated with a team of 2 developers to create a Wizard of Oz app for testing. Engaged in insightful discussions on AI literacy with families and children, gaining deeper stakeholder understanding. Executed impactful community-based research with families, focusing on AI literacy for valuable insights.",
+        "desc": "Worked under PHD student Stefania Druga to develop an interface for a web app that teaches coding, leveraging JavaScript and React framework. Collaborated with a team of 2 developers to create a Wizard of Oz app for testing. Engaged in insightful discussions on AI literacy with families and children, gaining deeper stakeholder understanding. Executed impactful community-based research with families, focusing on AI literacy for valuable insights.",
         "technologies": [
             "React",
             "React Native",
             "JavaScript",
             "HTML",
             "CSS"
-        ]
+        ],
+        "url": "https://digital.lib.washington.edu/researchworks/handle/1773/49926"
     }
 ]

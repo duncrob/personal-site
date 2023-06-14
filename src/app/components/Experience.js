@@ -31,7 +31,7 @@ export default function Experience({ experience }) {
                 <div className="col-span-6 z-10">
                     <h3 className="text-medium leading-snug text-slate-200">
                         <div>
-                            <a href="" target="_blank" rel="noreferrer" aria-label={experience.position + " at " + experience.company} className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-300 focus-visible:text-blue-300 group/link text-base">
+                            <a href={experience.url} target="_blank" rel="noreferrer" aria-label={experience.position + " at " + experience.company} className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-300 focus-visible:text-blue-300 group/link text-base">
                                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                                 <span>
                                     {experience.position + " · "}
