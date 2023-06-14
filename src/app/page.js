@@ -144,7 +144,7 @@ export default function Home() {
                 </p>
                 <p className='mb-4'>
                   My recent experience has been working on websites for various organizations at UW. In my off time, I love enjoying coffee and going&nbsp;
-                  <span className={"lg:cursor-[url('/snowboarder.png'),_pointer]"}>snowboarding</span>.
+                  <span className={"lg:cursor-[url('/img/snowboarder.png'),_pointer]"}>snowboarding</span>.
                 </p>
               </div>
             </section>
