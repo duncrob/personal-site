@@ -1,7 +1,7 @@
 'use client';
 import SplitType from "split-type"
 import Experience from "../components/Experience"
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import experiences from "../../../public/experiences.json"
 import projects from "../../../public/projects.json"
@@ -11,6 +11,8 @@ import { faLinkedin, faGithub, faInstagram } from "@fortawesome/free-brands-svg-
 import Project from "../components/Project";
 
 export default function Home() {
+  const [mousePos, setMousePos] = useState({ x: undefined, y: undefined });
+
   useEffect(() => {
     let text = SplitType.create('.name-text');
     let characters = document.querySelectorAll('.char');
@@ -20,7 +22,6 @@ export default function Home() {
     }
 
     document.querySelector('.name-text').classList.remove('invisible');
-    document.querySelector('.name-text').classList.remove('invisible');
 
     gsap.to('.char', {
       y: -3,
@@ -28,6 +29,10 @@ export default function Home() {
       delay: 0.02,
       duration: 0.5
     });
+
+    window.addEventListener("mousemove", (event) => {
+      setMousePos({ x: event.clientX, y: event.clientY + scrollY })
+    })
   }, [])
 
   function renderExperiences() {
@@ -44,7 +49,7 @@ export default function Home() {
 
   return (
     <div className='relative group/spotlight'>
-      <div className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute" style={{background: "radial-gradient(600px at 1023px 145px, rgba(29, 78, 216, 0.15), transparent 80%)"}}></div>
+      <div className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute" style={{background: "radial-gradient(600px at " + mousePos.x + "px " + mousePos.y +"px, rgba(29, 78, 216, 0.15), transparent 80%)"}}></div>
       <div className='mx-auto min-h-screen max-w-screen-xl px-6 md:px-12 lg:px-24 py-12 md:py-20 lg:py-0'>
         <div className='lg:flex lg:justify-between lg:gap-4'>
           <header className='lg:py-24 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between max-h-screen'>
