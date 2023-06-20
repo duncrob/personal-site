@@ -1,11 +1,10 @@
-'use client';
 import { useEffect } from "react"
 import NavBar from "./NavBar"
 import SocialLinks from "./SocialLinks"
 import { gsap } from "gsap";
 import SplitType from "split-type"
 
-export default function Directory({ experienceHeight }) {
+export default function Directory({ experienceHeight, projectsHeight }) {
   useEffect(() => {
     let text = SplitType.create('.name-text');
     let characters = document.querySelectorAll('.char');
@@ -32,7 +31,7 @@ export default function Directory({ experienceHeight }) {
         </h1>
         <h2 className='mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl'>Frontend Developer</h2>
         <p className='max-w-xs mt-4'>I am passionate about web experiences that empower the user.</p>
-        <NavBar experienceHeight={experienceHeight} />
+        <NavBar experienceHeight={experienceHeight} projectsHeight={projectsHeight} />
       </div>
       <SocialLinks />
     </header>

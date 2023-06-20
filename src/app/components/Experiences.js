@@ -9,7 +9,7 @@ export default function Experiences({ setExperienceHeight }) {
 
   useEffect(() => {
     setExperienceHeight(elementRef.current.offsetTop);
-  }, [elementRef])
+  }, [elementRef, setExperienceHeight])
 
   function renderExperiences() {
     return experiences.map((experience) => {
