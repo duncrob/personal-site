@@ -29,9 +29,9 @@ export default function Experiences({ setExperienceHeight }) {
         <div className="mt-12">
           <a href="/Resume.pdf" type="application/pdf" className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold group" aria-label="View Full Résumé">
             <span>
-              <span className="border-b border-transparent pb-px transition group-hover:border-blue-300 motion-reduce:transition-none">View Full </span>
+              <span className="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">View Full </span>
               <span className="whitespace-nowrap" >
-                <span className="border-b border-transparent pb-px transition group-hover:border-blue-300 motion-reduce:transition-none" >Résumé</span>
+                <span className="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none" >Résumé</span>
                 <FontAwesomeIcon aria-hidden className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" icon={faArrowRight} />
               </span>
             </span>

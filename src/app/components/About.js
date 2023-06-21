@@ -36,7 +36,7 @@ export default function About() {
               <span className="group-hover/uw:text-purple-400 transition duration-75 group-hover/uw:-translate-y-px delay-[625ms]">n</span>
             </span>
           </a>
-          . I graduated with a Bachelor of Science in <a className="font-medium text-slate-200 hover:text-blue-300 focus-visible:text-blue-300" href="https://ischool.uw.edu/programs/informatics/what-is-informatics" target="_blank" rel="noreferrer">Informatics</a>, leveraging my skills to become a frontend developer.
+          . I graduated with a Bachelor of Science in <a className="font-medium text-slate-200 hover:text-sky-300 focus-visible:text-sky-300" href="https://ischool.uw.edu/programs/informatics/what-is-informatics" target="_blank" rel="noreferrer">Informatics</a>, leveraging my skills to become a frontend developer.
         </p>
         <p className='mb-4'>
           My recent experience has been working on websites for various organizations at UW. In my off time, I love enjoying coffee and going&nbsp;
