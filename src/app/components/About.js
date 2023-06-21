@@ -42,18 +42,18 @@ export default function About() {
           My recent experience has been working on websites for various organizations at UW. In my off time, I love enjoying coffee and going&nbsp;
           <span className={"lg:cursor-[url('/img/snowboarder.png'),_pointer] group/snowboard inline-flex"}>
             <span className="sr-only">Snowboarding</span>
-              <span className="group-hover/snowboard:text-sky-300 transition duration-75 group-hover/snowboard:-translate-y-0.5 delay-[50ms]">s</span>
-              <span className="group-hover/snowboard:text-sky-200 transition duration-75 group-hover/snowboard:translate-y-0.5 delay-[75ms]">n</span>
-              <span className="group-hover/snowboard:text-sky-300 transition duration-75 group-hover/snowboard:-translate-y-0.5 delay-[100ms]">o</span>
-              <span className="group-hover/snowboard:text-sky-200 transition duration-75 group-hover/snowboard:translate-y-0.5 delay-[125ms]">w</span>
-              <span className="group-hover/snowboard:text-sky-300 transition duration-75 group-hover/snowboard:-translate-y-0.5 delay-[150ms]">b</span>
-              <span className="group-hover/snowboard:text-sky-200 transition duration-75 group-hover/snowboard:translate-y-0.5 delay-[175ms]">o</span>
-              <span className="group-hover/snowboard:text-sky-300 transition duration-75 group-hover/snowboard:-translate-y-0.5 delay-[200ms]">a</span>
-              <span className="group-hover/snowboard:text-sky-200 transition duration-75 group-hover/snowboard:translate-y-0.5 delay-[225ms]">r</span>
-              <span className="group-hover/snowboard:text-sky-300 transition duration-75 group-hover/snowboard:-translate-y-0.5 delay-[250ms]">d</span>
-              <span className="group-hover/snowboard:text-sky-200 transition duration-75 group-hover/snowboard:translate-y-0.5 delay-[275ms]">i</span>
-              <span className="group-hover/snowboard:text-sky-300 transition duration-75 group-hover/snowboard:-translate-y-0.5 delay-[300ms]">n</span>
-              <span className="group-hover/snowboard:text-sky-200 transition duration-75 group-hover/snowboard:translate-y-0.5 delay-[325ms]">g</span>
+              <span className="group-hover/snowboard:text-sky-300 transition duration-75 group-hover/snowboard:-translate-y-px delay-[50ms]">s</span>
+              <span className="group-hover/snowboard:text-sky-200 transition duration-75 group-hover/snowboard:translate-y-px delay-[75ms]">n</span>
+              <span className="group-hover/snowboard:text-sky-300 transition duration-75 group-hover/snowboard:-translate-y-px delay-[100ms]">o</span>
+              <span className="group-hover/snowboard:text-sky-200 transition duration-75 group-hover/snowboard:translate-y-px delay-[125ms]">w</span>
+              <span className="group-hover/snowboard:text-sky-300 transition duration-75 group-hover/snowboard:-translate-y-px delay-[150ms]">b</span>
+              <span className="group-hover/snowboard:text-sky-200 transition duration-75 group-hover/snowboard:translate-y-px delay-[175ms]">o</span>
+              <span className="group-hover/snowboard:text-sky-300 transition duration-75 group-hover/snowboard:-translate-y-px delay-[200ms]">a</span>
+              <span className="group-hover/snowboard:text-sky-200 transition duration-75 group-hover/snowboard:translate-y-px delay-[225ms]">r</span>
+              <span className="group-hover/snowboard:text-sky-300 transition duration-75 group-hover/snowboard:-translate-y-px delay-[250ms]">d</span>
+              <span className="group-hover/snowboard:text-sky-200 transition duration-75 group-hover/snowboard:translate-y-px delay-[275ms]">i</span>
+              <span className="group-hover/snowboard:text-sky-300 transition duration-75 group-hover/snowboard:-translate-y-px delay-[300ms]">n</span>
+              <span className="group-hover/snowboard:text-sky-200 transition duration-75 group-hover/snowboard:translate-y-px delay-[325ms]">g</span>
           </span>.
         </p>
       </div>

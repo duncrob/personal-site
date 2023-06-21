@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Directory from "./components/Directory";
 import MouseTracker from "./components/MouseTracker";
 import { useState } from "react";
+import Footnote from "./components/Footnote";
 
 export default function Home() {
   const [experienceHeight, setExperienceHeight] = useState(0);
@@ -20,6 +21,7 @@ export default function Home() {
             <About />
             <Experiences setExperienceHeight={setExperienceHeight} />
             <Projects setProjectsHeight={setProjectsHeight} />
+            <Footnote />
           </main>
         </div>
       </div>
