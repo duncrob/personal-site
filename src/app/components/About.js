@@ -1,4 +1,6 @@
-export default function About() {
+import Snowfall from "react-snowfall";
+
+export default function About({ setSnowfall }) {
   return (
     <section id='about' className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24' aria-label='About me'>
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -40,7 +42,7 @@ export default function About() {
         </p>
         <p className='mb-4'>
           My recent experience has been working on websites for various organizations at UW. In my off time, I love enjoying coffee and going&nbsp;
-          <span className={"lg:cursor-[url('/img/snowboarder.png'),_pointer] group/snowboard inline-flex"}>
+          <span className={"lg:cursor-[url('/img/snowboarder.png'),_pointer] group/snowboard inline-flex"} onMouseOver={() => {setSnowfall(<Snowfall />)}} onMouseOut={() => {setSnowfall("")}}>
             <span className="sr-only">Snowboarding</span>
               <span className="group-hover/snowboard:text-sky-300 transition duration-75 group-hover/snowboard:-translate-y-px delay-[50ms]">s</span>
               <span className="group-hover/snowboard:text-sky-200 transition duration-75 group-hover/snowboard:translate-y-px delay-[75ms]">n</span>

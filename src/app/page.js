@@ -10,15 +10,20 @@ import Footnote from "./components/Footnote";
 export default function Home() {
   const [experienceHeight, setExperienceHeight] = useState(0);
   const [projectsHeight, setProjectsHeight] = useState(0);
+  const [snowfall, setSnowfall] = useState("");
 
   return (
-    <div className='relative group/spotlight'>
+    <div id="top-container" className='relative group/spotlight'>
+      {snowfall}
+      {/* <div className="visible">
+        <Snowfall />
+      </div> */}
       <MouseTracker />
       <div className='mx-auto min-h-screen max-w-screen-xl px-6 md:px-12 lg:px-24 py-12 md:py-20 lg:py-0'>
         <div className='lg:flex lg:justify-between lg:gap-4'>
           <Directory experienceHeight={experienceHeight} projectsHeight={projectsHeight} />
           <main id='content' className='pt-24 lg:py-24 lg:w-1/2'>
-            <About />
+            <About setSnowfall={setSnowfall} />
             <Experiences setExperienceHeight={setExperienceHeight} />
             <Projects setProjectsHeight={setProjectsHeight} />
             <Footnote />
