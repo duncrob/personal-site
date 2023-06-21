@@ -15,9 +15,6 @@ export default function Home() {
   return (
     <div id="top-container" className='relative group/spotlight'>
       {snowfall}
-      {/* <div className="visible">
-        <Snowfall />
-      </div> */}
       <MouseTracker />
       <div className='mx-auto min-h-screen max-w-screen-xl px-6 md:px-12 lg:px-24 py-12 md:py-20 lg:py-0'>
         <div className='lg:flex lg:justify-between lg:gap-4'>
