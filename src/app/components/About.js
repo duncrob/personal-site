@@ -42,7 +42,7 @@ export default function About({ setSnowfall }) {
         </p>
         <p className='mb-4'>
           My recent experience has been working on websites for various organizations at UW. In my off time, I love enjoying coffee and going&nbsp;
-          <span className={"lg:cursor-[url('/img/snowboarder.png'),_pointer] group/snowboard inline-flex"} onMouseOver={() => {setSnowfall(<Snowfall />)}} onMouseOut={() => {setSnowfall("")}}>
+          <span className={"lg:cursor-[url('/img/snowboarder.png'),_pointer] group/snowboard inline-flex lg:font-medium lg:text-slate-200"} onMouseOver={() => {setSnowfall(<Snowfall />)}} onMouseOut={() => {setSnowfall("")}}>
             <span className="sr-only">Snowboarding</span>
               <span className="group-hover/snowboard:text-sky-300 transition duration-75 group-hover/snowboard:-translate-y-px delay-[50ms]">s</span>
               <span className="group-hover/snowboard:text-sky-200 transition duration-75 group-hover/snowboard:translate-y-px delay-[75ms]">n</span>
